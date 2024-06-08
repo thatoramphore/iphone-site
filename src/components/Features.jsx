@@ -3,9 +3,9 @@ import { useGSAP } from "@gsap/react";
 import { animateWithGsap } from "../utils/animations";
 import { exploreVideo, explore1Img, explore2Img } from "../utils/index";
 import gsap from "gsap";
-import { scrollTrigger } from "gsap/all";
+import { ScrollTrigger } from "gsap/all";
 
-gsap.registerPlugin(scrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
 const Features = () => {
 
@@ -14,7 +14,7 @@ const Features = () => {
     useGSAP(() => {
         gsap.to('#exploreVideo', {
             scrollTrigger: {
-                trigger: target,
+                trigger: '#exploreVideo',
                 toggleActions: 'play pause reverse restart',
                 start: '-10% bottom',
             },
