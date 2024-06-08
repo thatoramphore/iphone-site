@@ -53,7 +53,7 @@ const ProChip = () => {
                         </div>
                         <div className="hiw-video">
                             <video className="pointer-events-none" playsInline
-                                preload="none" nuted autoPlay ref={videoRef}>
+                                preload="none" muted autoPlay ref={videoRef}>
                                 <source src={frameVideo} type="video/mp4" />
                             </video>
                         </div>
