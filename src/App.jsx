@@ -6,6 +6,7 @@ import * as Sentry from "@sentry/react";
 import Features from "./components/Features";
 import ProChip from "./components/ProChip";
 import Footer from "./components/Footer";
+import MainCamera from "./components/MainCamera";
 
 const App = () => {
 
@@ -19,6 +20,7 @@ const App = () => {
       <Model />
       <Features />
       <ProChip />
+      <MainCamera />
       <Footer />
     </main>
   )

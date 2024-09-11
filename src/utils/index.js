@@ -1,5 +1,7 @@
 import hero from "/assets/images/hero.jpeg";
+import maincamera from "/assets/images/maincamera.jpg";
 
+export const mainCamera = maincamera; 
 export const heroImg = hero;
 
 import hmv from "/assets/videos/hero.mp4";

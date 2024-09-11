@@ -23,7 +23,7 @@ const ProChip = () => {
             ease: 'power2.inOut'
         });
 
-        animateWithGsap('.g_fadeIn', { opacity: 1, y: 0, duration: 1, ease: 'power2.inOut' });
+        animateWithGsap('.g_fadeIn', { opacity: 1, y: 0, ease: 'power2.inOut' });
 
     }, [])
 
@@ -87,6 +87,7 @@ const ProChip = () => {
                     </div>
                 </div>
             </div>
+            <div className="bg-neutral-800 mt-10 my-5 h-[1px] w-full" />
         </section>
     )
 }

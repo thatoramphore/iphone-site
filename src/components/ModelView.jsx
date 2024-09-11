@@ -1,7 +1,5 @@
 import React, { Suspense } from 'react';
 import { PerspectiveCamera, View, OrbitControls } from "@react-three/drei";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
 import Lights from './Lights';
 import IPhone from "./IPhone";
 import * as THREE from "three";
@@ -13,11 +11,11 @@ const ModelView = ({ index, groupRef, gsapType, controlRef, setRotationState, si
     index={index} 
     id={gsapType} 
     className={`w-full h-full absolute 
-        ${index === 2 ? 'right-[-100%]' : ''}`}>
+        ${index === 2 ? 'right-[-105%]' : ''}`}>
         {/* Ambient Light */}
-        <ambientLight intensity={0.1} />
+        <ambientLight intensity={0.3} />
 
-        <PerspectiveCamera makeDefault position={[0, 0, 4]} />
+        <PerspectiveCamera makeDefault position={[2, 0, 3]} />
 
         <Lights />
 
@@ -26,7 +24,7 @@ const ModelView = ({ index, groupRef, gsapType, controlRef, setRotationState, si
         ref={controlRef}
         enableZoom={false}
         enablePan={false}
-        rotateSpeed={0.4}
+        rotateSpeed={0.6}
         target={new THREE.Vector3(0, 0, 0)}
         onEnd={() => setRotationState(controlRef.current.getAzimuthalAngle())}
         />
